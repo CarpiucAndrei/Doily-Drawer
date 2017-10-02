@@ -50,7 +50,5 @@ public class DragListener extends MouseAdapter
     	draw(e);
 		pressed = e;
     }
-    
-
 }
 

@@ -82,7 +82,6 @@ public class MyFrame extends JFrame
 		checkPanel.add(checkReflect);
 		
 		jpanel.add(checkPanel);
-		
 		jpanel.add(new LineSpinner(drawPanel.drawComponent));		
 			
 			JButton clearButton = new JButton("Clear");
@@ -178,27 +177,27 @@ public class MyFrame extends JFrame
 													System.out.println("Your image wasn't saved");
 											}
 										});
-	jpanel.add(saveButton);
+		jpanel.add(saveButton);
 	
-		JButton galleryButton = new JButton("Gallery");
-		galleryButton.addActionListener(new ActionListener() {
-											public void actionPerformed(ActionEvent e)
-											{
-											       SwingUtilities.invokeLater(new Runnable() 
-											       {
-											            public void run() 
-											            {
-											                Gallery app = new Gallery();
-											                app.setVisible(true);
-											            }
-											        });
-											}
-										});
-	jpanel.add(galleryButton);
-		
-	this.add(jpanel, BorderLayout.NORTH);
-	this.pack();
-	this.setMinimumSize(new Dimension(1025, 1025));
-	this.setVisible(true);
-	}
+			JButton galleryButton = new JButton("Gallery");
+			galleryButton.addActionListener(new ActionListener() {
+												public void actionPerformed(ActionEvent e)
+												{
+												       SwingUtilities.invokeLater(new Runnable() 
+												       {
+												            public void run() 
+												            {
+												                Gallery app = new Gallery();
+												                app.setVisible(true);
+												            }
+												        });
+												}
+											});
+		jpanel.add(galleryButton);
+			
+		this.add(jpanel, BorderLayout.NORTH);
+		this.pack();
+		this.setMinimumSize(new Dimension(1025, 1025));
+		this.setVisible(true);
+		}
 }

@@ -7,17 +7,16 @@ import java.util.LinkedList;
 
 import javax.swing.JPanel;
 
-public class DrawPanel extends JPanel
+public class DrawPanel extends JPanel 
 {
 	public DrawComponent drawComponent = new DrawComponent(this);;
 
-	public DrawPanel()
-	{	
-		setLayout(new GridLayout(1,1));
+	public DrawPanel() {
+		setLayout(new GridLayout(1, 1));
 		add(drawComponent);
 	}
-	public DrawComponent getDrawComponent()
-	{
+
+	public DrawComponent getDrawComponent() {
 		return drawComponent;
 	}
 }
