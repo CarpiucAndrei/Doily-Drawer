@@ -1,3 +1,3 @@
 # Doily-Drawer
 A doily drawer GUI
-(./images/asa.png)
+[a relative link](asa.png)
